@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <form onsubmit="return addd()">
+    <input name=gender id="m" type="radio" value="Male">
+    <span>M</span>
+    <input name=gender id="f" type="radio" value="feMale">
+    <span>F</span>
+    <input type="submit"/>
+
+
+</form>
+</div>
+<script>
+    function addd(form){
+        console.log(form.m.value)
+        return false;
+    }
+</script>
+    
+</body>
+</html>
