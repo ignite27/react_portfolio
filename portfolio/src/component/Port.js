@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 
 function Port() {
   return (
-    <div className='content bg-primary-subtle'><div className="container">
+  <div className='content bg-primary-subtle'>
+    <div className="container">
     <nav className="navbar navbar-expand-lg  ">
     <div className="container-fluid bg-success-subtle ">
       <a className="navbar-brand" href="#">CRC_Training</a>
@@ -80,7 +82,7 @@ function Port() {
         <div className="card-body h-100">
           <h5 className="card-title">Assingment-2</h5>
           <p className="card-text "></p>
-          <a href="day2.html" className="btn btn-primary">Go somewhere</a>
+          <Link to='/assignment2' className="btn btn-primary">View assingment-2</Link>
         </div>
     
    

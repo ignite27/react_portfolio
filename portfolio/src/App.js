@@ -1,22 +1,34 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import Port from "./component/Port";
-import { Route, Routes, Link } from "react-router-dom";
-import Time from "./component/Time";
+// import Time from "./component/Time";
+import Nav from "./component/Nav";
+import Corousel from "./component/Corousel";
+// import Cards from "./component/Cards";
+import Footer from "./component/Footer";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Port />
     
-      <Routes>
+      <div className="container">
+        <Nav/>
+        <div className="container">
+          <Outlet/>
+        </div>
+        <Footer/>
+
+      </div>
+    
+      /* <Routes>
         <Route path="/add" element={<Time />} />
       </Routes>
 
       <Link to="/add">
         <button>click </button>
-      </Link>
-    </>
+      </Link> */
+      
+    
   );
 }
 

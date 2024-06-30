@@ -27,12 +27,22 @@
 .App-link {
   color: #61dafb;
 }
-.content{
-  background-image: url(../public/background.jpg);
+.container{
+  background-image: url(../public/bg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 8px;
   
 }
+.card{
+  background-color: transparent;
+}
+
+.d-block{
+  height: 498px;
+}
+  
+
 .card{
   /* background-color: rgba(255,255, 255, 0.5); */
   
